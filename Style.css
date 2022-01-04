@@ -1,0 +1,86 @@
+@font-face {
+  font-family: DigitalNumbers-Regular;
+  src: url(DigitalNumbers-Regular.ttf);
+}
+
+body {
+  font-size: 15pt;
+  background: linear-gradient(180deg, blue, red);
+  height: 98.2vh;
+}
+#btn {
+  width: 200px;
+  height: 200px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+.btns {
+  overflow: hidden;
+}
+#resetBtn {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
+  top: 60%;
+  /* transform: translate(-50%, -50%); */
+}
+/* section {
+  position: relative;
+} */
+#counter {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  font-family: "DigitalNumbers-Regular";
+  border: 1px solid white;
+  border-radius: 15px;
+}
+span {
+  position: absolute;
+  background: #fff;
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+  transform: translate(-50%, -50%);
+}
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.4;
+  }
+
+  100% {
+    width: 2000px;
+    height: 2000px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 536px) {
+  #btn {
+    left: 35%;
+    top: 50%;
+  }
+  #resetBtn {
+    left: 20%;
+    top: 60%;
+  }
+}
+@media (max-width: 352px) {
+  #btn {
+    left: 25%;
+    top: 50%;
+  }
+  #resetBtn {
+    left: 5%;
+    top: 60%;
+  }
+}
