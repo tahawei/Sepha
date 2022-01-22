@@ -2,11 +2,9 @@ const btn = document.getElementById("btn");
 const resetBtn = document.getElementById("resetBtn");
 const counter = document.getElementById("counter");
 
-let clicks = 0;
+let clicks = 1;
 btn.onclick = () => {
-  clicks += 1;
-
-  counter.innerHTML = clicks;
+  counter.innerHTML = clicks++;
 };
 
 resetBtn.onclick = () => {
